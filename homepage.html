@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Diagonistic Lab</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id='nav'>
+        <h1>Online Diagonistic lab</h1>
+        <span id='first'><a href="#content">Home</a></span>
+        <span id='sec'><a href="#cards">Services</a></span>
+        <span id='three'><a href="#about">About us</a></span>
+    </div>
+    <div id='main'>
+      <img id="main-img" src="https://www.uq.edu.au/news/filething/get/141199/EIAT%20medical%20hub.jpg">
+     
+      <div class="card" style="width: 18rem;">
+       
+       
+      </div>
+    </div>
+    <div id="content">
+      <h3>What is the need for Online Diagonistic Lab ?</h3><br><br>
+      <h4>
+        
+        In Today's time we see a lot of the shortage of the doctors in the world especially in India.
+        A lot of people are suffering a lot without the help of the proper Medical Checkup.
+     Also most of the cases many cases arise leading to dealth due to lack of timely Medical Checkup
+   So to cope up with all of those Problems this Online Daigonising App is designed which would prove its benefits upto much extent.
+     
+        </h4>
+    </div> 
+    <div id="left"><img id='left-img' src="http://curislifecare.com/images/quality2.png"></div>
+    <div id="right"><div id="right-top"><h4 style="color:darkblue;font-size:40px">The Uses of Online Diagonistic Lab are given below :</h4><br></div>
+    <div id="right-left"><img id='decor' src="https://yt3.ggpht.com/a/AATXAJzCiEWpN4j2aX_B-t9413wQP9Hi7fy3P3cerw=s900-c-k-c0xffffffff-no-rj-mo"><br><br><br><br><br>
+    <img id='decor' src="https://yt3.ggpht.com/a/AATXAJzCiEWpN4j2aX_B-t9413wQP9Hi7fy3P3cerw=s900-c-k-c0xffffffff-no-rj-mo"><br><br><br><br><br>
+    <img id='decor' src="https://yt3.ggpht.com/a/AATXAJzCiEWpN4j2aX_B-t9413wQP9Hi7fy3P3cerw=s900-c-k-c0xffffffff-no-rj-mo"><br><br><br><br><br>
+    <img id='decor' src="https://yt3.ggpht.com/a/AATXAJzCiEWpN4j2aX_B-t9413wQP9Hi7fy3P3cerw=s900-c-k-c0xffffffff-no-rj-mo"><br><br><br><br></div>
+    <div id="right-right"><h5>Quick Prediction</h5>
+        <h4>We have used light ML model that can load within no time without compromising on the accuracy of the prediction. Light models quickly load which helps in better response of the page.</h4><br>
+        <h5>Wide Range</h5>
+        <h4> This Web-App provides a wide range of predicting the contamination multiple infectious diseases like Kidney disease, Diabetes, Liver Infection, Heart Disease & Breast Cancer.</h4><br><br>
+        <h5>Highly Accurate</h5>
+        <h4>Though this app provides a wide range and high speed the accuracy has not been compromised. Hyper-parameters have been selected very carefully so that the accuracy is not hampered.</h4><br>
+        <h5>Affordability</h5>
+
+        <h4>Good healthcare facilities still a dream of the common people the biggest problem many approx. 63 million people are faced with poverty every year because of their healthcare expenditure. Using the technology in a better way healthcare can be made affordable for everyone</h4></div>
+    </div>
+    <div id="cards">
+      <div id="cards-text">Services Provided:</div>
+      <span class="heart"><a href="{{url_for('heart')}}"><img id="cards_img" src="https://www.finddoctor24.com/wp-content/uploads/2017/11/cardiology-doctor.jpg"></a><span id="cards-img-title">HEART</span><span id="cards-img-text">To Get to know Your Result with high Accuracy click the above image</span></span>
+      <span class="diabetes"><a href="{{url_for('diabetes')}}"><img id="cards_img" src="https://images.hindustantimes.com/img/2021/06/23/1600x900/d55d10aa-d3e2-11eb-aa44-bd97d0999889_1624425821199.jpg"></a><span id="cards-img-title">DIABETES</span><span id="cards-img-text">To Get to know Your Result with high Accuracy click the above image</span></span>
+      <span class="thyroid"><a href="{{url_for('thyroid')}}"><img id="cards_img" src="https://pixfeeds.com/images/25/554553/1200-508730745-doctor-checking-thyroid.jpg"></a><span id="cards-img-title">THYROID</span><span id="cards-img-text">To Get to know Your Result with high Accuracy click the above image</span></span>
+      <span class="kidney"><a href="{{url_for('kidney')}}"><img id="cards_img" src="https://www.dpcedcenter.org/wp-content/uploads/2016/03/Doctor-showing-a-kidney-on-a-tablet-closeup-912018634_2125x1417.jpeg"></a><span id="cards-img-title">KIDNEY</span><span id="cards-img-text">To Get to know Your Result with high Accuracy click the above image</span></span>
+      <span class="brain"><a href="{{url_for('parkinson')}}"><img id="cards_img" src="https://mixkit.imgix.net/videos/preview/mixkit-doctor-shows-patient-brain-scan-on-large-screen-5642-0.jpg.jpg"></a><span id="cards-img-title">PARKINSON</span><span id="cards-img-text">To Get to know Your Result with high Accuracy click the above image</span></span>
+      <span class="liver"><a href="{{url_for('liver')}}"><img id="cards_img" src="https://st2.depositphotos.com/1051355/7204/i/950/depositphotos_72042437-stock-photo-doctor-with-stethoscope-and-liver.jpg"></a><span id="cards-img-title">LIVER</span><span id="cards-img-text">To Get to know Your Result with high Accuracy click the above image</span></span>
+      
+    
+    </div>
+    <div id="about"><div id="cards-text" style="color:darkblue">Want to connect with our Developers ?</div>
+  
+  <h4 style="color:black">We are Team <b>ProjMLWebapp</b> also we are College students pursuing Btech in Computer Science with Business system in SRM KTR<br></h4>
+  <span id="cards-us"><img id="cards-us-img" src="https://media-exp1.licdn.com/dms/image/C5603AQGYsToDcMoZFg/profile-displayphoto-shrink_200_200/0/1612373239320?e=1640217600&v=beta&t=AO0aXy8MqVhZlR9k4pYRW81UXNbVCu1BCtQ3CkEA-YU"><span id="us-text">Dinesh kumar R<BR><a href="https://www.linkedin.com/in/dinesh-kumar-r-7323b61ab/" style="color:white">click here for Linkedin ID</a><br>dk8846@srmist.edu.in</span></span>
+    <span id="cards-us"><img id="cards-us-img" src="https://media-exp1.licdn.com/dms/image/D5635AQHRjtqJNrtwCQ/profile-framedphoto-shrink_800_800/0/1632413025815?e=1635008400&v=beta&t=xCWuRmqtf0HnixEXDFMQ4AYJieoKByvnv0QyOTaLsQ0"><span id="us-text">Saarika R Nair<BR><a href="https://www.linkedin.com/in/saarika-r-nair-5a9b4819a/" style="color:white">click here for Linkedin ID</a><br>sr7934@srmist.edu.in</span></span>
+      <span id="cards-us"><img id="cards-us-img" src="" alt="mogana image"><span id="us-text">Mogana Priya<BR><a href="..." alt="linkedin ID" style="color:white">click here for Linkedin ID</a><br>mp8802@srmist.edu.in</span></span>
+    </div>
+    
+</body>
+<style>
+  #us-text{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:200px;
+    left:0px;
+  }
+  #cards-us{
+    height:300px;
+    width:300px;
+    background-color:rgb(0, 60, 255);
+    position:absolute;
+    top:200px;
+    left:120px;
+    padding-bottom:20px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 4px 3px 8px 1px #969696;
+  }
+  
+  #cards-us:nth-of-type(2){
+    height:300px;
+    width:300px;
+    background-color:rgb(0, 60, 255);
+    position:absolute;
+    top:200px;
+    left:520px;
+    padding-bottom:20px;
+    border-radius: 30px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    color: white;
+  }
+  #cards-us:nth-of-type(3){
+    height:300px;
+    width:300px;
+    background-color:rgb(0, 60, 255);
+    position:absolute;
+    top:200px;
+    left:920px;
+    padding-bottom:20px;
+    border-radius: 30px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    color: white;
+  }
+
+  #cards-us-img{
+    height:150px;
+    width:150px;
+    background-color:white;
+    position:absolute;
+    top:20px;
+    left:75px;
+    
+    border-radius: 100px;
+  }
+  #about{
+    width:100%;
+ 
+    position:absolute;
+    top:2600px;
+    text-align: center;
+
+  }
+  .heart{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:120px;
+    left:120px;
+    
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    
+  }
+  .heart:hover{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:120px;
+    left:120px;
+    background-color: rgb(55, 55, 255);
+    border-radius: 20px;
+    color:white;
+    box-shadow: 4px 3px 8px 1px #969696;
+  }
+  .diabetes{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:120px;
+    left:520px;
+    
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    
+  }
+  .diabetes:hover{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:120px;
+    left:520px;
+    background-color: rgb(55, 55, 255);
+    border-radius: 20px;
+    color:white;
+    box-shadow: 4px 3px 8px 1px #969696;
+  }
+  .thyroid{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:120px;
+    left:920px;
+    
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    
+  }
+  .thyroid:hover{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:120px;
+    left:920px;
+    background-color: rgb(55, 55, 255);
+    border-radius: 20px;
+    color:white;
+    box-shadow: 4px 3px 8px 1px #969696;
+  }
+  .kidney{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:520px;
+    left:120px;
+    
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    
+  }
+  .kidney:hover{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:520px;
+    left:120px;
+    background-color: rgb(55, 55, 255);
+    border-radius: 20px;
+    color:white;
+    box-shadow: 4px 3px 8px 1px #969696;
+  }
+  .brain{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:520px;
+    left:520px;
+    
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    
+  }
+  .brain:hover{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:520px;
+    left:520px;
+    background-color: rgb(55, 55, 255);
+    border-radius: 20px;
+    color:white;
+    box-shadow: 4px 3px 8px 1px #969696;
+  }
+  .liver{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:520px;
+    left:920px;
+    
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    
+  }
+  .liver:hover{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:520px;
+    left:920px;
+    background-color: rgb(55, 55, 255);
+    border-radius: 20px;
+    color:white;
+    box-shadow: 4px 3px 8px 1px #969696;
+  }
+    a{
+        text-decoration: none;
+        color:darkblue;
+        height:100px;
+        
+    }
+    a:hover{
+        text-decoration: none;
+        height:100px;
+        color:darkblue;
+        
+    }
+    #cards{
+      height:800px;
+      width:100%;
+     
+      position:absolute;
+      top:1650px;
+      align-items: center;
+    }
+    #cards-img-title{
+      position:absolute;
+      top:200px;
+      left:120px;
+      font-size: large;
+      font-weight: 500;
+      
+    }
+    #cards-img-text{
+      position:absolute;
+      top:235px;
+      left:30px;
+      font-size: small;
+      font-weight: 200;
+      width:80%;
+      height: 100%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    #right-left{
+      position:absolute;
+      top:110px;
+      height:100%;
+      width:60px;
+   
+    }
+    #right-right{
+      position:absolute;
+      top:110px;
+      left:60px;
+      height:80%;
+      width:90%;
+      padding-left:10px;
+      padding-top:10px;
+    }
+    #right-top{
+      height:100px;
+      width:100%;
+      position:absolute;
+
+    }
+    #decor{
+      height:50px;
+      width:50px;
+    }
+    h4{
+      font-family: sans-serif;
+      font-size:20px;
+
+    }
+    h3{
+      font-size:50px;
+      font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+    }
+    
+    
+    #left-img{
+      position:absolute;
+      
+      height:700px;
+      width:100%;
+    }
+    #right-img:first-of-type{
+      height:100px;
+      width:100px;
+      border-radius:10px;
+      position:absolute;
+      left:50px;
+    }
+    #right-img:nth-of-type(2){
+      height:100px;
+      width:100px;
+      border-radius:10px;
+      position:absolute;
+      left:50px;
+      top:200px;
+    }
+    #right-img:nth-child(3){
+      height:100px;
+      width:100px;
+      border-radius:10px;
+      position:absolute;
+      left:50px;
+    top:500px;    }
+    #cards-text{
+      height:100px;
+      width:100%;
+      
+      text-align: center;
+      align-items: center;
+      padding-top: 5px;
+      font-size: xx-large;
+      font-weight: 500;
+      color: darkblue;
+      
+    }
+    #cards_img{
+        height:200px;
+        width:100%;
+        border-radius: 20px 20px 0 0;
+        position: absolute;
+        top:0px;
+        left:0px;
+
+    }
+    #left{
+      position:absolute;
+      top:900px;
+      height:600px;
+      width:50%;
+      
+
+    }
+    #right{
+      position:absolute;
+      top:900px;
+      left:675px;
+      height:600px;
+      width:50%;
+      padding:20px;
+      padding-top:0px;
+    
+      
+      
+
+    }
+    #content{
+      
+      height:300px;
+      position:absolute;
+      background:white;
+      text-align: center;
+      width:100%;
+      top:620px;
+      justify-content: center;
+
+    }
+    #first{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:darkblue;
+        position:absolute;
+        right:300px;
+        top:30px;
+        height:100px;
+        font-weight: 300;
+        font-size: large;
+    }
+    #first:hover{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:darkblue;
+        position:absolute;
+        right:300px;
+        top:30px;
+        border-color:white;
+        border-bottom:rgb(40, 17, 255);
+        font-weight: 300;
+        font-size: large;
+        
+        
+        border-style: solid;
+        height:40px;
+    }
+    #sec{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:darkblue;
+        position:absolute;
+        right:170px;
+        top:30px;
+        height:100px;
+        font-weight: 300;
+        font-size: large;
+    }
+    #sec:hover{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:darkblue;
+        position:absolute;
+        right:170px;
+        top:30px;
+        border-color:white;
+        border-bottom:rgb(40, 17, 255);
+        font-weight: 300;
+        font-size: large;
+        
+        
+        border-style: solid;
+        height:40px;
+    }
+    #three{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:darkblue;
+        position:absolute;
+        right:50px;
+        top:30px;
+        height:100px;
+        font-weight: 300;
+        font-size: large;
+    }
+    #three:hover{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:darkblue;
+        position:absolute;
+        right:50px;
+        top:30px;
+        border-color:white;
+        border-bottom:rgb(40, 17, 255);
+        font-weight: 300;
+        font-size: large;
+        
+        
+        border-style: solid;
+        height:40px;
+    }
+    h1{
+        font-size:xx-large;
+        font-family:sans-serif;
+        color:darkblue;
+        position:absolute;
+        top:20px;
+        left:50px;
+        position:absolute;
+        font-weight: 600;
+
+    }
+    #main-text{
+        font-size:50px;
+        font-family:sans-serif;
+        color:white;
+        position:absolute;
+        top:50px;
+        left:50px;
+        position:absolute;
+        font-weight: 700;
+
+    }
+    h2{
+        font-size:x-large;
+        font-family:sans-serif;
+        color:white;
+        position:absolute;
+        top:150px;
+        left:50px;
+        position:absolute;
+        font-weight: 600;
+
+    }
+    #nav{
+        height:70px;
+        width:100%;
+        background-color:white;
+        font-weight: 200;
+        position:absolute;
+
+    }
+    body{
+        margin:0px;
+        
+        background:white;
+    }
+    #main{
+        position:absolute;
+        top:90px;
+       
+        height:500px;
+       
+        
+
+    }
+    #main-img{
+        position: relative;
+       
+        
+        height:500px;
+        width:1400px;
+        
+
+    }
+    #one{
+      position:absolute;
+      top:0px;
+      left:100px;
+    }
+</style>
+</html>

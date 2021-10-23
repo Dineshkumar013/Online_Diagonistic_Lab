@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVER disease prediction</title>
+</head>
+<body>
+    <div id='title'>Get to Know your Liver's health in Few clicks
+       
+    </div>
+    
+    <div id='bottom'>
+        <br><br><br><br><br><br>
+        Developed by Team <b>''''ProjMLWeb''''</b></div>
+    <div id='left'>
+        <img src="https://www.gastroclinics.com/wp-content/uploads/2020/09/shutterstock_1431469970-scaled.jpg">
+    </div>
+    <div id='right'>
+        <form method="POST" , ACTION="{{url_for('liver_predict')}}">
+            <b>  
+                Age :  <input type="number", name='a', placeholder="enter your age"> <br><br><br>
+
+                Total Bilirubin :  <input type="float", name='b', placeholder="value "> <br><br><br>
+
+                Direct Bilirubin :  <input type="float", name='c', placeholder="value b/w 0-20"> <br><br><br>
+                
+                Total_protiens :<input type="float", name='e', placeholder="value more than 50 "> <br><br><br>
+                Albumin :<input type="float", name='f', placeholder="value more than 5 "> <br><br><br>
+                Albumin And Globulin ratio :<input type="float", name='g', placeholder="value "> <br><br><br>
+                Alamine Aminotransferase :<input type="float", name='h', placeholder="value b/w 2-10 "> <br><br><br>
+                Aspartate Aminotransferase :<input type="float", name='i', placeholder="value b/w 0-6 "> <br><br><br>
+                Alkaline Phosphotase :<input type="float", name='j', placeholder="value b/w 0-3 "> <br><br><br>
+                
+                Gender :  <input type="radio" name='l' value="1">Male
+                <input type="radio" name='l' value="0">Female<br><br><br>
+
+                
+
+                <button id="btn" type="submit">Let's Predict !</button>
+                <button id='btn1'><a href="/">Go back</a></button>
+               </form>
+               
+    </div>
+    <br><br><br>
+               <h4>{{prediction_text}}</h4>
+</body>
+<style>
+   
+    body{
+    display:flex;
+    margin:0px;
+    
+
+}
+h4{
+position:absolute;
+top:700px;
+left:200px;
+font-size: large;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color:darkblue;
+}
+#title{
+    height:100px;
+    width:100%;
+    font-size:xx-large;
+    font-family:Verdana, Tahoma, Geneva, Verdana, sans-serif;
+   padding-top:30px;
+   font-weight: 300;
+    text-align: center;
+    position:absolute;
+    color:darkblue;
+    align-items: center;
+
+}
+#left{
+    height:600px;
+    width:600px;
+    
+    border-style:solid;
+    border-radius: 0 70px 70px 0;
+    position:absolute;
+    top:100px;
+    border-color:black;
+    border-width: 5px;
+    
+}
+img{
+    height:400px;
+    width:500px;
+    position:absolute;
+    padding:100px;
+    left:-50px;
+
+    
+    
+
+
+
+}
+#right{
+  
+  padding-left: 100px;
+  padding-top: 10px;
+  border-style:solid;
+  border-width: 5px;
+    border-radius:  70px  0 0 70px ;
+    border-color:black;
+    height:590px;
+    width:550px;
+    position:absolute;
+    top:100px;
+    left:700px;
+    background:linear-gradient(to right,white,rgb(4, 0, 255));
+    
+}
+#bottom{
+
+    height:100px;
+    width:100%;
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:absolute;
+    text-align: center;
+    bottom:1px;
+    padding-top: 50px;
+    top:700px;
+    align-items: center;
+}
+#btn{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: 10px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:black;
+    color:white;
+    margin-bottom:50px;
+}
+#btn1{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: -200px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:black;
+    color:white;
+    margin-bottom:50px;
+}
+a{
+    color:white;
+    text-decoration: none;
+
+}
+a  {
+    color:white;
+    text-decoration: none;
+    
+}
+#btn1:hover{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: -200px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:darkblue;
+    color:white;
+    margin-bottom:50px;
+}
+#btn:hover{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: 10px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:darkblue;
+    margin-bottom:50px;
+    color:white;
+}
+</style>

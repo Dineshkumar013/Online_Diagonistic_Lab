@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart disease prediction</title>
+    <link rel="stylesheet" type="css" href="/static/css/heart_css.css">
+</head>
+<body>
+    <div id='title'>Get to Know your Heart's Condition in Few clicks
+       
+    </div>
+    
+    <div id='bottom'>
+        <br><br><br><br><br><br>
+        Developed by Team <b>''''ProjMLWeb''''</b></div>
+    <div id='left'>
+        <img src="https://cdn3.vectorstock.com/i/1000x1000/25/27/heart-disease-symptoms-logo-icon-vector-18862527.jpg">
+    </div>
+    <div id='right'>
+        <form method="POST" , ACTION="{{url_for('heart_predict')}}">
+            <b>  
+                Age :  <input type="number", name='a', placeholder="enter your age"> <br><br>
+
+                Gender of the person:  <input type="radio" name='b' value="0">Female
+                <input type="radio" name='b' value="1">Male <br><br>
+
+                Chest pain : <input type="radio" name='c' value="0">Anginal
+                <input type="radio" name='c' value="2">Non-Anginal
+                <input type="radio" name='c' value="1">Non Typical
+                <input type="radio" name='c' value="3">Typical<br><br>
+                
+                Resting blood pressure:  <input type="number", name='d', placeholder="(94-200) in mm Hg"> <br><br>
+
+                Cholesterol: <input type="number", name='e', placeholder="(126-564) in mg/dl"> <br><br>
+
+                Fasting bp > 120:  <input type="radio" name='f' value="1">Yes
+                <input type="radio" name='f' value="0">No<br><br>
+
+                Restecg :  <input type="radio" name='g' value="1">Yes
+                <input type="radio" name='g' value="0">No<br><br>
+
+                Thallach :  <input type="number", name='h', placeholder="value between 70-220"> <br><br>
+
+                Exang :  <input type="radio" name='i' value="1">Yes
+                <input type="radio" name='i' value="0">No <br><br>
+
+                Oldpeak :  <input type="text", name='j', placeholder="prev peak decimal value"> <br><br>
+
+                Slope :  <input type="radio" name='k' value="0">0
+                <input type="radio" name='k' value="1">1 
+                <input type="radio" name='k' value="2">2
+                <br><br>
+
+                No of major vessel:  <input type="number", name='l', placeholder="value between 0-3"> <br><br>
+
+                Thal rate:
+                <input type="radio" name='m' value="1">Fixed
+                <input type="radio" name='m' value="2">Normal
+                <input type="radio" name='m' value="3">Reversable<br><br><br><br></b>
+
+                <button id="btn" type="submit">Let's Predict !</button>
+                <button id='btn1'><a href="/">Go back</a></button>
+               </form>
+               
+    </div>
+    <br><br><br>
+               <h4>{{prediction_text}}</h4>
+</body>
+<style>
+    body{
+    display:flex;
+    margin:0px;
+    
+
+}
+h4{
+position:absolute;
+top:700px;
+left:200px;
+font-size: large;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color:darkblue;
+}
+#title{
+    height:100px;
+    width:100%;
+    font-size:xx-large;
+    font-family:Verdana, Tahoma, Geneva, Verdana, sans-serif;
+   padding-top:30px;
+   font-weight: 300;
+    text-align: center;
+    position:absolute;
+    color:darkblue;
+    align-items: center;
+
+}
+#left{
+    height:600px;
+    width:600px;
+    
+    border-style:solid;
+    border-radius: 0 70px 70px 0;
+    position:absolute;
+    top:100px;
+    border-color:black;
+    border-width: 5px;
+    
+}
+img{
+    height:400px;
+    width:400px;
+    position:absolute;
+    padding:100px;
+    
+    
+
+
+
+}
+#right{
+  
+  padding-left: 100px;
+  padding-top: 10px;
+  border-style:solid;
+  border-width: 5px;
+    border-radius:  70px  0 0 70px ;
+    border-color:black;
+    height:590px;
+    width:550px;
+    position:absolute;
+    top:100px;
+    left:700px;
+    background:linear-gradient(to right,white,rgb(4, 0, 255));
+    
+}
+#bottom{
+
+    height:100px;
+    width:100%;
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:absolute;
+    text-align: center;
+    bottom:1px;
+    padding-top: 50px;
+    top:700px;
+    align-items: center;
+}
+#btn{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: 10px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:black;
+    color:white;
+    margin-bottom:50px;
+}
+#btn1{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: -200px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:black;
+    color:white;
+    margin-bottom:50px;
+}
+a{
+    color:white;
+    text-decoration: none;
+
+}
+a  {
+    color:white;
+    text-decoration: none;
+    
+}
+#btn1:hover{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: -200px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:darkblue;
+    color:white;
+    margin-bottom:50px;
+}
+#btn:hover{
+    font-size: medium;
+    box-sizing: border-box;
+    position:absolute;
+    top: 700px;
+    left: 10px;
+    border-radius: 50px;
+    border-color: black;
+    height:50px;
+    width:150px;
+    background-color:darkblue;
+    margin-bottom:50px;
+    color:white;
+}
+</style>
+</html>

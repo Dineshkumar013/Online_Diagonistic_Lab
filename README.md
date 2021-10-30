@@ -1,43 +1,62 @@
+
 # Online_Diagonistic_Lab
-![Demo]
+![mini project gif](https://user-images.githubusercontent.com/60866104/139554259-4c819084-0607-4996-9be1-c901750b4721.gif)
 # Project Title
-
-One Paragraph of the project description
-
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
-
-## Getting Started
-
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+The project is to bring an online diagonistic lab for people who required the result of the report without any delay. 
+In most of the labs, the values of the test will be calculated quickly but assessing the required result takes hour of time. 
+This is where our idea rose from. An Online Diagonistic lab that predicts the disease using some important feature. 
+This provides us with the result in a fraction of second. Once entered the values, it predicts us the disease.
+the model comprises of 6 models that helps us identify the disease.
 
 ### Prerequisites
 
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+- Numpy
+- Pandas
+- Matplotlib
+- Keras
+- Scikit-Learn
+- Jsonify
+- Pickle
+- Flask
+### Languages,frameworks Used
+- Python
+- HTML
+- CSS
+- JS
+- Bootstrap
 
-### Installing
+## Datasets
 
-A step by step series of examples that tell you how to get a development
-environment running
+The following are the disease
+Kidney,heart,diabetes,liver,parkinson's,thyroid.
 
-Say what the step will be
+- KIDNEY MODEL:
+This model helps us to identify any kind of kidney disfunction with the values of some characteristics in kidney. 
 
-    Give the example
+- HEART MODEL:
+This model helps us to identify whether a person is affected by any heart disease or not in your heart.
 
-And repeat
+- DIABETES MODEL:
+This model helps us to classify a diabetic and a non-diabetic person.
 
-    until finished
+- LIVER MODEL:
+This model helps us to classify liver disease in your liver.
 
-End with an example of getting some data out of the system or using it
-for a little demo
+- BRAIN MODEL:
+This model helps us to identify parkinson'disease in your brain.
 
-## Running the tests
+- THYROID MODEL:
+This model helps us to identify thyroid problems in your thyroid gland
 
-Explain how to run the automated tests for this system
+
+
+
+##  How to build it locally:
+- Open Visual studio code editor.
+- Clone with `git clone https://github.com/Dineshkumar013/Online_Diagonistic_Lab`.
+- Select the python intrepreter on your device.
+- Using the terminal , type python py_1.py
+
 
 ### Sample Tests
 

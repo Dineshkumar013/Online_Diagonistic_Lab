@@ -67,10 +67,13 @@ If you find any issues or bugs that can be fixed in our project ,Please feel fre
 
 ## Authors
 
-  - *Dineshkumar* - Provided README Template -
+  - *Dinesh kumar R* - Provided README Template -
     [dineshkumar013](https://github.com/dineshkumar013)
-  - *Billie Thompson* - Provided README Template -
-    [PurpleBooth](https://github.com/PurpleBooth)
+  - *Saarika R Nair* - Provided README Template -
+    [saarika005](https://github.com/SAARIKA005)
+  - *M.Mogana Priya* - Provided README Template -
+    [Mogana108](https://github.com/Mogana108)
+    
 
 ## License
 

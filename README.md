@@ -18,20 +18,20 @@ the model comprises of 6 models that helps us identify the disease.
 - Jsonify
 - Pickle
 - Flask
-### Languages,frameworks Used
+### Languages,frameworks Used  :
 - Python
 - HTML
 - CSS
 - JS
 - Bootstrap
 
-## Datasets
+## Model files :
 
 The following are the disease
 Kidney,heart,diabetes,liver,parkinson's,thyroid.
 
 - KIDNEY MODEL:
-This model helps us to identify any kind of kidney disfunction with the values of some characteristics in kidney. 
+ This model helps us to identify any kind of kidney disfunction with the values of some characteristics in kidney. 
 
 - HEART MODEL:
 This model helps us to identify whether a person is affected by any heart disease or not in your heart.
@@ -48,7 +48,8 @@ This model helps us to identify parkinson'disease in your brain.
 - THYROID MODEL:
 This model helps us to identify thyroid problems in your thyroid gland
 
-
+## Datasets:
+All the datasets which are required to run this project is provided above.
 
 
 ##  How to build it locally:
@@ -62,7 +63,7 @@ This model helps us to identify thyroid problems in your thyroid gland
 
 Explain what these tests test and why
 
-    Give an example
+     Give an example
 
 ### Style test
 

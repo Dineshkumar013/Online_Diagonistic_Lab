@@ -1,1 +1,1 @@
-web: gunicorn online-diagonistic-lab:app
+web: gunicorn py_1:app

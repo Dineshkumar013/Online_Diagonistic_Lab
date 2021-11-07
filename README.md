@@ -1,6 +1,10 @@
 
 # Online_Diagonistic_Lab
 ![mini project gif](https://user-images.githubusercontent.com/60866104/139554259-4c819084-0607-4996-9be1-c901750b4721.gif)
+
+#Url :
+https://online-med-lab.herokuapp.com/
+
 # Project Title
 The project is to bring an online diagonistic lab for people who required the result of the report without any delay. 
 In most of the labs, the values of the test will be calculated quickly but assessing the required result takes hour of time. 

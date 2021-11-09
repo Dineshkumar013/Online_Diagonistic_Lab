@@ -1,5 +1,4 @@
-absl-py==0.14.1
-astunparse==1.6.3
+
 cachetools==4.2.4
 certifi==2021.5.30
 charset-normalizer==2.0.6
@@ -8,9 +7,7 @@ colorama==0.4.4
 Flask==2.0.2
 flatbuffers==2.0
 gast==0.4.0
-google-auth==2.3.0
-google-auth-oauthlib==0.4.6
-google-pasta==0.2.0
+
 grpcio==1.41.0
 h5py==3.1.0
 idna==3.2
@@ -24,9 +21,7 @@ libclang==11.1.0
 Markdown==3.3.4
 MarkupSafe==2.0.1
 numpy==1.19.5
-oauthlib==3.1.1
-opt-einsum==3.3.0
-protobuf==3.18.1
+
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 requests==2.26.0
@@ -39,12 +34,12 @@ sklearn==0.0
 tensorboard==2.7.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
-tensorflow-estimator==2.6.0
+
 tensorflow-io-gcs-filesystem==0.21.0
 termcolor==1.1.0
 threadpoolctl==3.0.0
 typing-extensions==3.7.4.3
-urllib3==1.26.7
-Werkzeug==2.0.2
+python==3.9.6
+
 wrapt==1.12.1
 xgboost==1.4.2

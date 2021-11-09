@@ -39,7 +39,7 @@ tensorflow-io-gcs-filesystem==0.21.0
 termcolor==1.1.0
 threadpoolctl==3.0.0
 typing-extensions==3.7.4.3
-python==3.9.6
+
 
 wrapt==1.12.1
 xgboost==1.4.2

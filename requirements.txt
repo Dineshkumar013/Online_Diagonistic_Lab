@@ -42,4 +42,3 @@ typing-extensions==3.7.4.3
 
 
 wrapt==1.12.1
-xgboost==1.4.2

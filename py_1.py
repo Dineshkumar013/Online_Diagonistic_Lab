@@ -34,7 +34,7 @@ def liver():
     return render_template('liver_pred.html')
 @app.route('/h_predict', methods=['POST'])
 def heart_predict():
-    model=pickle.load(open('E:\MINI project\model_files\heart-new.pkl','rb')) 
+    model=pickle.load(open(r'heart-new.pkl','rb')) 
     name=request.form.get("n")
     initial=[float(x) for x in request.form.values()]
     arr =[np.array(initial)]
@@ -47,7 +47,7 @@ def heart_predict():
 
 @app.route('/db_predict',methods=['POST'])
 def diabetes_predict():  
-    model=pickle.load(open(r'E:\MINI project\model_files\new_diabetes.pkl','rb')) 
+    model=pickle.load(open(r'new_diabetes.pkl','rb')) 
     
     initial=[float(x) for x in request.form.values()]
     arr =[np.array(initial)]
@@ -60,7 +60,7 @@ def diabetes_predict():
 
 @app.route('/p_predict',methods=['POST'])
 def parkinson_predict():  
-    model=pickle.load(open(r'E:\MINI project\model_files\parkinson.pkl','rb')) 
+    model=pickle.load(open(r'parkinson.pkl','rb')) 
     
     initial=[float(x) for x in request.form.values()]
     arr =[np.array(initial)]
@@ -72,7 +72,7 @@ def parkinson_predict():
         return render_template('parkinson_pred.html',prediction_text="Sorry to say this ... you are having the symptoms of parkinson disease consult a docter immediately...")
 @app.route('/t_predict',methods=['POST'])
 def thyroid_predict():  
-    model=pickle.load(open(r'E:\MINI project\model_files\Thyroid.pkl','rb')) 
+    model=pickle.load(open(r'Thyroid.pkl','rb')) 
     
     initial=[float(x) for x in request.form.values()]
     arr =[np.array(initial)]
@@ -85,7 +85,7 @@ def thyroid_predict():
 
 @app.route('/k_predict',methods=['POST'])
 def kidney_predict():  
-    model=pickle.load(open(r'E:\MINI project\model_files\kidney.pkl','rb')) 
+    model=pickle.load(open(r'kidney.pkl','rb')) 
     
     initial=[float(x) for x in request.form.values()]
     arr =[np.array(initial)]
@@ -98,7 +98,7 @@ def kidney_predict():
 
 @app.route('/l_predict',methods=['POST'])
 def liver_predict():  
-    model=pickle.load(open(r'E:\MINI project\model_files\LIVER.pkl','rb')) 
+    model=pickle.load(open(r'LIVER.pkl','rb')) 
     
     initial=[float(x) for x in request.form.values()]
     arr =[np.array(initial)]
